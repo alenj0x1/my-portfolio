@@ -1,0 +1,20 @@
+<div class="flex flex-col gap-3 p-5 bg-gray-100 rounded shadow hover:bg-gray-200 hover:cursor-pointer active:bg-gray-300">
+  <div class="flex flex-col pb-4 border-b-2">
+    <strong  class="text-gray-600 text-lg font-medium">{{githubRepo.name}}</strong>
+    <span class="text-gray-500">{{githubRepo.description}}</span>
+  </div>
+
+  <div class="flex justify-between">
+    <div class="flex gap-2">
+      @for (language of githubRepo.additionals.languages; track $index) {
+        <img class="h-7 grayscale hover:grayscale-0" [src]="'/assets/svg/'+ language.toLowerCase() + '.svg'" />
+      }
+    </div>
+
+    <a class="flex items-center gap-1" [href]="githubRepo.html_url">
+      <ng-icon class="text-xl text-gray-500" name="matStar"></ng-icon>
+
+      <span class="text-gray-500">{{githubRepo.stargazers_count}}</span>
+    </a>
+  </div>
+</div>

@@ -4,12 +4,12 @@
  <div class="card-content">
   @if (githubUser.name) {
     <!-- Show name and username -->
-    <h1 class="card-name">{{githubUser.name}}</h1>
+    <a [href]="githubUser.html_url" target="_blank" class="card-name">{{githubUser.name}}</a>
     <span class="card-username">{{githubUser.login | parseUsername }}</span>
   }
   @else {
     <!-- Show only username -->
-    <span class="card-name">{{githubUser.login | parseUsername }}</span>
+    <a [href]="githubUser.html_url" target="_blank" class="card-name">{{githubUser.login | parseUsername }}</a>
   }
 
   <span class="card-biography">{{githubUser.bio ? githubUser.bio : 'without biography.'}}</span>

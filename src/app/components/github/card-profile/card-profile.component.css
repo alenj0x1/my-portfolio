@@ -1,11 +1,11 @@
 .card {
-  @apply bg-gray-100 p-5 mt-10 mx-5 shadow rounded flex flex-col justify-center items-center gap-5
+  @apply p-5 mt-10 mx-5 flex flex-col justify-center items-center gap-5
   md:gap-10 md:flex-row md:justify-start md:mx-16
   xl:mx-40 xl:p-10;
 }
 
 .card-avatar {
-  @apply h-32 rounded-full border-8 border-gray-300
+  @apply h-32 rounded-full border-8 border-gray-200
   md:h-48;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .card-name {
-  @apply text-lg text-gray-500 font-medium text-center
+  @apply text-lg text-gray-500 font-medium text-center hover:text-gray-400
   md:text-5xl md:mb-1 md:text-left;
 }
 
