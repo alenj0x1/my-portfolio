@@ -1,0 +1,17 @@
+<div class="card">
+  <img class="card-avatar" [src]="githubUser.avatar_url"/>
+
+ <div class="card-content">
+  @if (githubUser.name) {
+    <!-- Show name and username -->
+    <h1 class="card-name">{{githubUser.name}}</h1>
+    <span class="card-username">{{githubUser.login | parseUsername }}</span>
+  }
+  @else {
+    <!-- Show only username -->
+    <span class="card-name">{{githubUser.login | parseUsername }}</span>
+  }
+
+  <span class="card-biography">{{githubUser.bio ? githubUser.bio : 'without biography.'}}</span>
+ </div>
+</div>

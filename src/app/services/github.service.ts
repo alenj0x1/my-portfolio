@@ -18,7 +18,7 @@ export class GithubService {
 
   constructor(private http: HttpClient) { }
 
-  profile() {
-    return this.http.get<IGithubUser>(this.baseUrl+this.apiEndpoints.users+this.githubUsername)
+  user() {
+    return this.http.get<IGithubUser>(this.baseUrl+this.apiEndpoints.users+this.githubUsername);
   }
 }
