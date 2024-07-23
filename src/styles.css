@@ -3,6 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-zinc-950;
+}
+
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-red-900 rounded-md;
+}
+
 .subt {
   @apply text-gray-500 text-xl font-medium text-left
   md:text-4xl;

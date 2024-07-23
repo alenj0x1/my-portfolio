@@ -14,6 +14,7 @@ import githubReposParser from '../../lib/parser';
   standalone: true,
   imports: [CardProfileComponent, CardRepositoryComponent],
   templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
 export class HomeComponent {
   public githubUser: IGithubUser = GITHUB_USER_DEFAULT_DATA;
