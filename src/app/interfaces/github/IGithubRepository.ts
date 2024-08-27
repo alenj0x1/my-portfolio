@@ -1,4 +1,4 @@
-import IGithubPartialUser from "./IGithubPartialUser";
+import IGithubPartialUser from './IGithubPartialUser';
 
 export default interface IGithubRepository {
   id: number;
@@ -82,6 +82,6 @@ export default interface IGithubRepository {
   default_branch: string;
 
   additionals: {
-    languages: string[]
-  }
+    languages: string[];
+  };
 }

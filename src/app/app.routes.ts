@@ -6,11 +6,11 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: '@alemndev - home'
+    title: '@alemndev - home',
   },
   {
     path: 'error',
     component: ErrorComponent,
-    title: '@alemndev - error'
-  }
+    title: '@alenj0x1 - error',
+  },
 ];
